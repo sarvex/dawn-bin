@@ -103,11 +103,12 @@ typedef struct DawnProcTable {
     WGPUProcDeviceCreateTexture deviceCreateTexture;
     WGPUProcDeviceDestroy deviceDestroy;
     WGPUProcDeviceEnumerateFeatures deviceEnumerateFeatures;
+    WGPUProcDeviceForceLoss deviceForceLoss;
+    WGPUProcDeviceGetAdapter deviceGetAdapter;
     WGPUProcDeviceGetLimits deviceGetLimits;
     WGPUProcDeviceGetQueue deviceGetQueue;
     WGPUProcDeviceHasFeature deviceHasFeature;
     WGPUProcDeviceInjectError deviceInjectError;
-    WGPUProcDeviceLoseForTesting deviceLoseForTesting;
     WGPUProcDevicePopErrorScope devicePopErrorScope;
     WGPUProcDevicePushErrorScope devicePushErrorScope;
     WGPUProcDeviceSetDeviceLostCallback deviceSetDeviceLostCallback;
@@ -139,6 +140,7 @@ typedef struct DawnProcTable {
     WGPUProcQuerySetReference querySetReference;
     WGPUProcQuerySetRelease querySetRelease;
 
+    WGPUProcQueueCopyExternalTextureForBrowser queueCopyExternalTextureForBrowser;
     WGPUProcQueueCopyTextureForBrowser queueCopyTextureForBrowser;
     WGPUProcQueueOnSubmittedWorkDone queueOnSubmittedWorkDone;
     WGPUProcQueueSetLabel queueSetLabel;
