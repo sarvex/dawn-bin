@@ -1,6 +1,6 @@
 # dawn-bin
 
-Dawn (native wgpu implementation) compiled with [Zig](https://ziglang.org/download/) (0.11.0-dev.53+cbed6bb08).
+Dawn (native wgpu implementation) compiled with [Zig](https://ziglang.org/download/) (0.11.0-dev.64+e9a12491f).
 
 Built from latest Dawn source code as of 2022-11-04.
 
